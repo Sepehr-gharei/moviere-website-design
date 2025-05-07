@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moviere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Demo styles -->
+  </head>
+
+  <body dir="rtl">
+    <!-- ============================  header ============================ -->
+    <header id="scroll-top">
+      <!-- logo  -->
+      <div class="logo">
+        <img src="./assets/image/reLogo.png" alt="" />
+      </div>
+      <!-- nav -->
+      <ul class="menu">
+        <!-- home  -->
+        <li class="d-none d-lg-block"><a href="">خانه</a></li>
+
+        <!-- categories -->
+        <li class="d-none d-lg-block">
+          <div class="category-menu">
+            <button
+              class="btn btn-secondary category-menu-toggle"
+              type="button"
+              id="category-menuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-layer-group"></i> فهرست ها
+            </button>
+            <ul class="dropdown-menu first-dropdown-menu">
+              <li class="dropdown-item">
+                <img src="./assets/image/doucument-icon.svg" alt="" />
+                <span class="px-2">دسته ها</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href=""> فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href=""> فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <img src="./assets/image/film-icon.svg" alt="" />
+                <span class="px-2">ژانر فیلم</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <img src="./assets/image/serial-icon.svg" alt="" />
+
+                <span class="px-2">ژانر سریال</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- blog -->
+        <li class="d-none d-lg-block"><a href="">اخبار</a></li>
+        <!-- actors -->
+        <li class="d-none d-lg-block"><a href="">بازیگران</a></li>
+        <!-- nav in small responsive  -->
+        <div class="container-fluid nav-small-responsive d-lg-none">
+          <div class="row">
+            <div class="col-3 item">
+              <div>
+                <i class="fa fa-home"></i>
+              </div>
+              <div>
+                <p>خانه</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <!-- navbar -->
+              <button
+                class="navbar-toggler pt-1"
+                id="header-navbar-buttom"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasdarkNavbar"
+                aria-controls="offcanvasdarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <div>
+                  <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="pt-1">
+                  <p>فهرست ها</p>
+                </div>
+              </button>
+              <div
+                class="offcanvas offcanvas-end text-bg-dark"
+                tabindex="-1"
+                id="offcanvasdarkNavbar"
+                aria-labelledby="offcanvasdarkNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <img src="./assets/image/reLogo.png" alt="" />
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    id="header-navbar-btn-close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        دسته ها
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ژانر فیلم
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ژانر سریال
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div>
+                <i class="fa-regular fa-newspaper"></i>
+              </div>
+              <div>
+                <p>اخبار</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div>
+                <i class="fa-solid fa-person"></i>
+              </div>
+              <div>
+                <p>بازیگران</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+
+      <!-- search and login -->
+      <div class="search-login d-flex justify-content-between">
+        <div>
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+              ><i class="fa-solid fa-circle-xmark"></i
+            ></span>
+            <div class="close-2-background" onclick="closeSearch()"></div>
+            <div class="overlay-content">
+              <form onsubmit="event.preventDefault();" role="search" dir="ltr">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">Go</button>
+              </form>
+            </div>
+          </div>
+
+          <svg
+            class="svg-icon search-icon"
+            onclick="openSearch()"
+            aria-labelledby="title desc"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 19.9 19.7"
+          >
+            <title id="title">Search Icon</title>
+            <desc id="desc">A magnifying glass icon.</desc>
+            <g class="search-path" fill="none">
+              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+              <circle cx="8" cy="8" r="7" />
+            </g>
+          </svg>
+        </div>
+        <a href=""> ورود | ثبت نام </a>
+      </div>
+    </header>
+
+    <!-- ============================ start header slider ============================ -->
+
+    <div class="header-slider">
+      <!-- list Items -->
+      <div class="list">
+        <div class="item active">
+          <img
+            src="./assets/image/bryan-cranston-aaron-paul-breaking-bad_11zon.jpg"
+          />
+          <div class="content">
+            <p>
+              <span>7.1/<span>10</span></span>
+              <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+            </p>
+            <h2>breking bad</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="./assets/image/301766-dexter-dexterjpg-8825861280wjpg-f4799d_1280w-1155x720.jpg"
+          />
+          <div class="content">
+            <p>
+              <span>7.1/<span>10</span></span>
+              <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+            </p>
+            <h2>dexter</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img
+            src="./assets/image/helen-sloan-hbo-6-1-2000-166a336cf37e46f09f9227cc75bedd5d.jpg"
+          />
+          <div class="content">
+            <p>
+              <span>7.1/<span>10</span></span>
+              <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+            </p>
+            <h2>game of thrones</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/image/one-flew-over-the-cukoos-nest_11zon.jpg" />
+          <div class="content">
+            <p>
+              <span>7.1/<span>10</span></span>
+              <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+            </p>
+            <h2>one flew over the cukoos nest</h2>
+          </div>
+        </div>
+        <div class="item">
+          <img src="./assets/image/requiemforadreamimage1_11zon.jpg" />
+          <div class="content">
+            <p>
+              <span>7.1/<span>10</span></span>
+              <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+            </p>
+            <h2>requiem for a dream</h2>
+          </div>
+        </div>
+      </div>
+      <!-- button arrows -->
+      <div id="arrows" class="arrows z-index-100">
+        <button id="prev"><</button>
+        <button id="next">></button>
+      </div>
+      <!-- thumbnail -->
+      <div class="thumbnail">
+        <div class="item active">
+          <img src="./assets/image/unnamed.png" />
+        </div>
+        <div class="item">
+          <img src="./assets/image/p8818291_b_v8_aa.jpg" />
+        </div>
+        <div class="item">
+          <img src="./assets/image/game-of-thrones-poster_11zon.jpg" />
+        </div>
+        <div class="item">
+          <img
+            src="./assets/image/MV5BYjBkMjgzMzYtNzRiMS00NDc3LWE4YTUtZjYxYjZhNjNhYzhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+          />
+        </div>
+        <div class="item">
+          <img src="./assets/image/images.jpg" />
+        </div>
+      </div>
+    </div>
+    <!-- ============================ end header slider ============================ -->
+
+    <!-- ============================ start hot post  ============================ -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="main-post-slider">
+          <div class="header mb-4">
+            <h2>
+              <img src="./assets/image/fire-icon.svg" alt="" />
+              <span>داغ ترین فیلم ها</span>
+            </h2>
+          </div>
+          <div class="swiper main-swiper-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/donde-ver-rick-wershe-768x1024_11zon.jpg"
+                    alt=""
+                  />
+                  <h4>white boy rick</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/Blade_Runner_2049_poster.png"
+                    alt=""
+                  />
+                  <h4>blade runner</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/fury_poster.jpg" alt="" />
+                  <h4>fury</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/MotherMovie_11zon.jpg" alt="" />
+                  <h4>mother</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4>game of thrones</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/images.jpg" alt="" />
+                  <h4>requiem for a dream</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/MV5BYjBkMjgzMzYtNzRiMS00NDc3LWE4YTUtZjYxYjZhNjNhYzhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                    alt=""
+                  />
+                  <h4>one flew over the cukoos nest</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/p8818291_b_v8_aa.jpg" alt="" />
+                  <h4>dexter</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/TheSubstance1000-LuisitoCollagea.jpg"
+                    alt=""
+                  />
+                  <h4>the substance</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/s-l1200.jpg" alt="" />
+                  <h4>forrest gump</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/unnamed.png" alt="" />
+                  <h4>breking bad</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================ end hot post  ============================ -->
+
+    <!-- ============================ subscribe Start ================================== -->
+    <section class="mt-5">
+      <div class="container">
+        <div class="subscribe-container">
+          <!-- ============================ Page Title Start================================== -->
+          <div class="page-title-subscribe mb-5">
+            <div class="row">
+              <div class="col-lg-12 col-md-12">
+                <div class="header mb-4">
+                  <h2>
+                    <img src="./assets/image/diamond-svgrepo-com.svg" alt="" />
+                    <span> اشتراک ها </span>
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ============================ Page Title End ================================== -->
+          <div class="row">
+            <!-- Single Package -->
+            <div class="col-lg-4 col-md-4">
+              <div class="packages_wrapping">
+                <div class="packages_headers">
+                  <i class="lni-layers"></i>
+                  <h4 class="packages_pr_title">پکیج پایه</h4>
+                  <span class="packages_price-subtitle"
+                    >با پکیج پایه شروع کنید!</span
+                  >
+                </div>
+                <div class="packages_price">
+                  <h4 class="pr-value">49</h4>
+                </div>
+                <div class="packages_middlebody">
+                  <ul>
+                    <li>یکماه دسترسی به مطالب subscribe</li>
+                    <li>ارتباط مستقیم با واتساپ استاد</li>
+                    <li>الویت نمایش و بازدید بالا</li>
+                  </ul>
+                </div>
+                <div class="packages_bottombody">
+                  <a href="#" class="btn-pricing">انتخاب</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Package -->
+            <div class="col-lg-4 col-md-4">
+              <div class="packages_wrapping recommended">
+                <div class="packages_headers">
+                  <i class="lni-diamond"></i>
+                  <h4 class="packages_pr_title">پکیج نقره ای</h4>
+                  <span class="packages_price-subtitle"
+                    >با پکیج نقره ای شروع کنید!</span
+                  >
+                </div>
+                <div class="packages_price">
+                  <h4 class="pr-value">149</h4>
+                </div>
+                <div class="packages_middlebody">
+                  <ul>
+                    <li>دو ماه دسترسی به مطالب subscribe</li>
+                    <li>ارتباط مستقیم با واتساپ استاد</li>
+                    <li>الویت نمایش و بازدید بالا</li>
+                  </ul>
+                </div>
+                <div class="packages_bottombody">
+                  <a href="#" class="btn-pricing">انتخاب</a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Single Package -->
+            <div class="col-lg-4 col-md-4">
+              <div class="packages_wrapping">
+                <div class="packages_headers">
+                  <i class="lni-invention"></i>
+                  <h4 class="packages_pr_title">پکیج طلایی</h4>
+                  <span class="packages_price-subtitle"
+                    >با پکیج طلایی شروع کنید!</span
+                  >
+                </div>
+                <div class="packages_price">
+                  <h4 class="pr-value">199</h4>
+                </div>
+                <div class="packages_middlebody">
+                  <ul>
+                    <li>سه ماه دسترسی به مطالب subscribe</li>
+                    <li>ارتباط مستقیم با واتساپ استاد</li>
+                    <li>بازدید خیلی بالا</li>
+                  </ul>
+                </div>
+                <div class="packages_bottombody">
+                  <a href="#" class="btn-pricing">انتخاب</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ============================ subscribe End ================================== -->
+
+    <!-- ============================ start anime post  ============================ -->
+
+  
+  
+    <div class="container mt-5">
+      <div class="row">
+        <div class="main-post-slider">
+          <div class="header mb-4 mt-5 anime-post-header">
+            <h2>
+              <img
+                src=".//assets/image/anime-emoji-emoticon-2-svgrepo-com.svg"
+                alt=""
+              />
+              <span>جدید ترین انیمه ها</span>
+            </h2>
+          </div>
+          <div class="swiper anime-swiper-slider">
+            <div class="swiper-wrapper">
+             
+              <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>
+              <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>
+              <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>
+              <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>  <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>
+              <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>  <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>
+              <section class="wrapper-film col-6 col-md-4 col-lg-3 swiper-slide">
+                <div class="position-relative wrapper-header-slide">
+                  <div class="top-info d-flex justify-content-between">
+                    <div class="date">2024</div>
+                    <div class="rating d-flex">
+                      <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                      <p>7<span>/10</span></p>
+                    </div>
+                  </div>
+                  <img
+                    src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                    alt=""
+                  />
+                  <h4 class="position-relative">game of thrones</h4>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================ end anime post  ============================ -->
+    <!-- ============================ start question box   ============================ -->
+    <div class="container mt-0">
+      <div class="row">
+        <div class="fag-accordion">
+          <div class="header mb-4 mt-5 anime-post-header">
+            <h2>
+              <img src="./assets/image/question-mark-svgrepo-com.svg" alt="" />
+              <span>سوالات شما</span>
+            </h2>
+          </div>
+          <div class="accordion" id="accordionExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button
+                  class="accordion-button"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseOne"
+                  aria-expanded="true"
+                  aria-controls="collapseOne"
+                >
+                  آیا برای استفاده از سرویس شما باید اشتراک بخرم؟
+                </button>
+              </h2>
+              <div
+                id="collapseOne"
+                class="accordion-collapse collapse show"
+                aria-labelledby="headingOne"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>
+                    خیر میتوانید با بدون استفاده از اشتراک انلاین تماشا کنید ولی
+                    برای دانلود باید اشتراک خرید کنید
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="collapseTwo"
+                >
+                  آیا میتونیم خارج از ایران هم دانلود کنیم
+                </button>
+              </h2>
+              <div
+                id="collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingTwo"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>بله میتوانید</p>
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree"
+                  aria-expanded="false"
+                  aria-controls="collapseThree"
+                >
+                  آیا موویره بدون سانسور است
+                </button>
+              </h2>
+              <div
+                id="collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="headingThree"
+                data-bs-parent="#accordionExample"
+              >
+                <div class="accordion-body">
+                  <p>هیچکدام از عنوان ها تا به حال سانسور نشده است</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ end question box  ============================ -->
+    <!-- ============================ start series slider  ============================ -->
+    <div class="container mt-5">
+      <div class="row">
+        <div class="main-post-slider">
+          <div class="header mb-4">
+            <h2>
+              <img src="./assets/image/cinema.svg" alt="" />
+              <span>سریال های بروز شده</span>
+            </h2>
+          </div>
+          <div class="swiper main-swiper-slider">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/arcane_season_2_cover_by_theclontoons_dilupdg-fullview.jpg"
+                    alt=""
+                  />
+                  <h4>arcane</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/Covers-of-The-Witcher-Netflix-Series.png"
+                    alt=""
+                  />
+                  <h4>the witcher</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/house-of-the-dragon-mid-season-2_11zon.jpg"
+                    alt=""
+                  />
+                  <h4>house of the dragon</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/Money-Heist-was-first-released-on-Antena-3-in-Spain-in-2017-Netflix_11zon.jpg"
+                    alt=""
+                  />
+                  <h4>money heist</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/p18769646_b_v7_aa.jpg" alt="" />
+                  <h4>the queen's gambit</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/sporanos-max-banner-vanilla-2x3_11zon.jpg"
+                    alt=""
+                  />
+                  <h4>sopranons</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img
+                    src="./assets/image/TheLastofUs_2560x3840-c_11zon.jpg"
+                    alt=""
+                  />
+                  <h4>the last of us</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="position-relative swiper-header-slide">
+                  <img src="./assets/image/Walking_Dead_S2_Poster.jpg" alt="" />
+                  <h4>walking dead</h4>
+                  <span class="imdb">
+                    <span
+                      >7.1/
+                      <p>10</p></span
+                    >
+                    <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                  </span>
+                  <span class="subtitle">
+                    <i class="fa-solid fa-closed-captioning"></i>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================ end series slider  ============================ -->
+    <!-- ============================ start latest news  ============================ -->
+    <div class="container">
+      <div class="row">
+        <div class="latest-news-container">
+          <div class="header mb-4 mt-5 col-12">
+            <h2>
+              <img src="./assets/image/earth-svgrepo-com.svg" alt="" />
+              <span>اخرین اخبار ها</span>
+            </h2>
+          </div>
+          <div class="contents d-md-flex">
+            <div class="item col-12 col-md-6 d-xl-flex m-2 py-2">
+              <div class="image-container item col-12 col-xl-7 p-2">
+                <img src="./assets/image/gladiator 2_11zon.jpg" alt="" />
+              </div>
+              <div class="content-container item col-12 col-xl-5 p-2">
+                <div class="text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون لید سادگی نامفهوم از صنعت چاپ و بالید سادگی
+                  نامفهوم از
+                </div>
+                <div class="date-and-time-to-read d-flex">
+                  <div class="col-6">
+                    <i class="fa-regular fa-calendar-days"></i> 10 روز پیش
+                  </div>
+                  <div class="col-6">
+                    <i class="fa-regular fa-clock"></i> 10 دیقه زمان مطالعه
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item col-12 col-md-6 d-xl-flex m-2 py-2">
+              <div class="image-container item col-12 col-xl-7 p-2">
+                <img src="./assets/image/silo.jpg" alt="" />
+              </div>
+              <div class="content-container item col-12 col-xl-5 p-2">
+                <div class="text">
+                  لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
+                  استفاده از طراحان گرافیک است. چاپگرها و متون بلکه روزنامه و
+                  مجله در ستون لید سادگی نامفهوم از صنعت چاپ و بالید سادگی
+                  نامفهوم از
+                </div>
+                <div class="date-and-time-to-read d-flex">
+                  <div class="col-6">
+                    <i class="fa-regular fa-calendar-days"></i> 10 روز پیش
+                  </div>
+                  <div class="col-6">
+                    <i class="fa-regular fa-clock"></i> 10 دیقه زمان مطالعه
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================ end latest news  ============================ -->
+    <!-- ============================ start footer ============================ -->
+    <footer class="container-fluid footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between mb-3">
+            <div class="d-md-block col-5 col-md-3 col-lg-2">
+              <div class="col-9 mt-2 d-flex justify-content-start">
+                <img class="w-100" src="./assets/image/reLogo.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="d-flex col-7 col-md-3 col-lg-3 align-items-center justify-content-end"
+            >
+              <a class="custom-btn1" href="#scroll-top">
+                بازگشت به بالا <i class="fa-solid fa-chevron-up"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>عناوین برتر</h5>
+            <ul>
+              <li><a href="">250 فیلم imdb</a></li>
+              <li><a href="">250 سریال imdb</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>دسته ها</h5>
+            <ul>
+              <li><a href="">فیلم ها</a></li>
+              <li><a href="">سریال ها</a></li>
+              <li><a href="">انیمه ها</a></li>
+              <li><a href="">اخبار ها</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>راه های ارتباط</h5>
+            <div class="social-icon">
+              <ul class="nav">
+                <li class="nav-item twitter">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item instagram">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item facebook">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="nav-item telegram">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+              </ul>
+              <p>طهران - خیابون به زودی پلاک 021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright-text d-flex justify-content-center">
+        <p>کلیه حقوق این سایت متعلق به سپهر قارئی میباشد .</p>
+        <p>Copyright © 2024 All rights reserved</p>
+      </div>
+    </footer>
+    <!-- ============================ end footer  ============================ -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- Initialize Swiper -->
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

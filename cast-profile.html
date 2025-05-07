@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moviere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Demo styles -->
+  </head>
+
+  <body dir="rtl">
+    <!-- ============================  header ============================ -->
+    <header id="scroll-top">
+      <!-- logo  -->
+      <div class="logo">
+        <img src="./assets/image/reLogo.png" alt="" />
+      </div>
+      <!-- nav -->
+      <ul class="menu">
+        <!-- home  -->
+        <li class="d-none d-lg-block"><a href="">خانه</a></li>
+
+        <!-- categories -->
+        <li class="d-none d-lg-block">
+          <div class="category-menu">
+            <button
+              class="btn btn-secondary category-menu-toggle"
+              type="button"
+              id="category-menuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-layer-group"></i> فهرست ها
+            </button>
+            <ul class="dropdown-menu first-dropdown-menu">
+              <li class="dropdown-item">
+                <img src="./assets/image/doucument-icon.svg" alt="" />
+                <span class="px-2">دسته ها</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href=""> فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href=""> فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <img src="./assets/image/film-icon.svg" alt="" />
+                <span class="px-2">ژانر فیلم</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <img src="./assets/image/serial-icon.svg" alt="" />
+
+                <span class="px-2">ژانر سریال</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- blog -->
+        <li class="d-none d-lg-block"><a href="">اخبار</a></li>
+        <!-- actors -->
+        <li class="d-none d-lg-block"><a href="">بازیگران</a></li>
+        <!-- nav in small responsive  -->
+        <div class="container-fluid nav-small-responsive d-lg-none">
+          <div class="row">
+            <div class="col-3 item">
+              <div>
+                <i class="fa fa-home"></i>
+              </div>
+              <div>
+                <p>خانه</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <!-- navbar -->
+              <button
+                class="navbar-toggler pt-1"
+                id="header-navbar-buttom"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasdarkNavbar"
+                aria-controls="offcanvasdarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <div>
+                  <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="pt-1">
+                  <p>فهرست ها</p>
+                </div>
+              </button>
+              <div
+                class="offcanvas offcanvas-end text-bg-dark"
+                tabindex="-1"
+                id="offcanvasdarkNavbar"
+                aria-labelledby="offcanvasdarkNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <img src="./assets/image/reLogo.png" alt="" />
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    id="header-navbar-btn-close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        دسته ها
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ژانر فیلم
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ژانر سریال
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div>
+                <i class="fa-regular fa-newspaper"></i>
+              </div>
+              <div>
+                <p>اخبار</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div>
+                <i class="fa-solid fa-person"></i>
+              </div>
+              <div>
+                <p>بازیگران</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+
+      <!-- search and login -->
+      <div class="search-login d-flex justify-content-between">
+        <div>
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+              ><i class="fa-solid fa-circle-xmark"></i
+            ></span>
+            <div class="close-2-background" onclick="closeSearch()"></div>
+            <div class="overlay-content">
+              <form onsubmit="event.preventDefault();" role="search" dir="ltr">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">Go</button>
+              </form>
+            </div>
+          </div>
+
+          <svg
+            class="svg-icon search-icon"
+            onclick="openSearch()"
+            aria-labelledby="title desc"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 19.9 19.7"
+          >
+            <title id="title">Search Icon</title>
+            <desc id="desc">A magnifying glass icon.</desc>
+            <g class="search-path" fill="none">
+              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+              <circle cx="8" cy="8" r="7" />
+            </g>
+          </svg>
+        </div>
+        <a href=""> ورود | ثبت نام </a>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="row">
+        <div class="wrapper-artist"></div>
+        <div class="profile-artist">
+          <section class="wrapper-artist col-12 d-block d-md-none">
+            <article>
+              <figure>
+                <div class="profile">
+                  <img
+                    src="./assets/image/actors/30195091-l_30NAMA.webp"
+                    alt=""
+                  />
+                </div>
+              </figure>
+              <figcaption>
+                <div class="content">
+                  <div class="detail-artist">
+                    <div class="name"><p>نام : Alfred Hitchcock</p></div>
+                    <div class="profession">
+                      <p>حرفه : کارگردان , نویسنده , بازیگر</p>
+                    </div>
+                  </div>
+                  <div class="bio-artist">
+                    <a href="">بیوگرافی</a>
+                  </div>
+                </div>
+              </figcaption>
+            </article>
+          </section>
+
+          <div class="main-section">
+            <div class="left-side">
+              <div
+                class="archive-title d-flex justify-content-between mb-2 mt-5"
+              >
+                <div class="right-side d-flex align-items-center w-75">
+                  <div class="film-logo-svg">
+                    <svg
+                      id="#icon"
+                      xmlns="http://www.w3.org/2000/svg"
+                      shape-rendering="geometricPrecision"
+                      text-rendering="geometricPrecision"
+                      image-rendering="optimizeQuality"
+                      fill-rule="evenodd"
+                      clip-rule="evenodd"
+                      viewBox="0 0 466.994 511.648"
+                    >
+                      <path
+                        fill="#eee"
+                        d="M61.447 199.385h235.604c21.851 0 39.719 17.897 39.719 39.718v148.018c0 21.821-17.897 39.719-39.719 39.719h-72.77l52.85 84.808h-49.246l-57.646-77.467-58.221 77.467H62.145l52.548-84.808H61.447c-21.821 0-39.719-17.869-39.719-39.719V239.103c0-21.85 17.869-39.718 39.719-39.718zm1.017-158.376c34.499 0 62.465 27.966 62.465 62.465 0 34.498-27.966 62.464-62.465 62.464C27.966 165.938 0 137.972 0 103.474c0-34.499 27.966-62.465 62.464-62.465zM254.223 0c45.729 0 82.797 37.074 82.797 82.803s-37.068 82.804-82.797 82.804c-45.735 0-82.804-37.075-82.804-82.804S208.488 0 254.223 0zm105.101 378.919V251.415l107.67-63.464v256.135l-107.67-65.167z"
+                      />
+                    </svg>
+                  </div>
+                  <h2>فیلم و سریال ها</h2>
+                </div>
+
+                <div
+                  class="left-side d-flex align-items-center justify-content-end"
+                >
+                  <div class="genre">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        مرتب سازی
+                      </button>
+                      <ul class="dropdown-menu">
+                        <input
+                          type="text"
+                          placeholder="جستجو"
+                          class="filter-input"
+                        />
+                        <li><a class="dropdown-item" href="#">همه</a></li>
+                        <li><a class="dropdown-item" href="#">جدیدترین</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">قدیمی ترین</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">امتیاز imdb</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">محبوب ترین</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">سال انتشار</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="order-by">
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-secondary dropdown-toggle"
+                        type="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        انتخاب ژانر
+                      </button>
+                      <ul class="dropdown-menu">
+                        <input
+                          type="text"
+                          placeholder="جستجو"
+                          class="filter-input"
+                        />
+                        <li><a class="dropdown-item" href="#">همه</a></li>
+                        <li><a class="dropdown-item" href="#">اکشن</a></li>
+                        <li><a class="dropdown-item" href="#">درام</a></li>
+                        <li><a class="dropdown-item" href="#">کمدی</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">هیجان اگیز</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">عاشقانه</a></li>
+                        <li><a class="dropdown-item" href="#">مستند</a></li>
+                        <li><a class="dropdown-item" href="#">جنایی</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">ماجرا جویی</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">خانوادگی</a></li>
+                        <li>
+                          <a class="dropdown-item" href="#">علمی تخیلی</a>
+                        </li>
+                        <li><a class="dropdown-item" href="#">تاریخی</a></li>
+                        <li><a class="dropdown-item" href="#">ترسناک</a></li>
+                        <li><a class="dropdown-item" href="#">موزیکال</a></li>
+                        <li><a class="dropdown-item" href="#">فانتزی</a></li>
+                        <li><a class="dropdown-item" href="#">جنگی</a></li>
+                        <li><a class="dropdown-item" href="#">ورزشی</a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="container">
+                <div class="row">
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+
+                      <img
+                        src="./assets/image/arcane_season_2_cover_by_theclontoons_dilupdg-fullview.jpg"
+                        alt=""
+                      />
+
+                      <h4 class="position-relative">arcane</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/atack.jpg" alt="" />
+                      <h4 class="position-relative">atack on titan</h4>
+                    </div>
+                  </section>
+
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/donde-ver-rick-wershe-768x1024_11zon.jpg"
+                        alt=""
+                      />
+                      <h4 class="position-relative">white boy rick</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/Blade_Runner_2049_poster.png"
+                        alt=""
+                      />
+                      <h4 class="position-relative">blade runner</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/Covers-of-The-Witcher-Netflix-Series.png"
+                        alt=""
+                      />
+                      <h4 class="position-relative">witcher</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/deathnote.jpg" alt="" />
+                      <h4 class="position-relative">death note</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/Demon+Slayer_+Mugen+Train+Movie+Edition+Novelized.png"
+                        alt=""
+                      />
+                      <h4 class="position-relative">demon slayer</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/fury_poster.jpg" alt="" />
+                      <h4 class="position-relative">fury</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/game-of-thrones-poster_11zon.jpg"
+                        alt=""
+                      />
+                      <h4 class="position-relative">game of thrones</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/house-of-the-dragon-mid-season-2_11zon.jpg"
+                        alt=""
+                      />
+                      <h4 class="position-relative">house of the dragon</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/hunter-x-hunter-franchise-poster_11zon.jpg"
+                        alt=""
+                      />
+                      <h4 class="position-relative">hunter x hunter</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/images.jpg" alt="" />
+                      <h4 class="position-relative">requiem for a dream</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/jojo.jpg" alt="" />
+                      <h4 class="position-relative">jojo</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/jujutsu.jpg" alt="" />
+                      <h4 class="position-relative">jujutsu</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/Money-Heist-was-first-released-on-Antena-3-in-Spain-in-2017-Netflix_11zon.jpg"
+                        alt=""
+                      />
+                      <h4 class="position-relative">money heist</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/MV5BYjBkMjgzMzYtNzRiMS00NDc3LWE4YTUtZjYxYjZhNjNhYzhhXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+                        alt=""
+                      />
+                      <h4 class="position-relative">
+                        one flew over the cukoos nest
+                      </h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/naruto.jpg" alt="" />
+                      <h4 class="position-relative">naruto</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/onepeace.jpg" alt="" />
+                      <h4 class="position-relative">one peace</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/onpuchman.jpg" alt="" />
+                      <h4 class="position-relative">one puch man</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/p8818291_b_v8_aa.jpg" alt="" />
+                      <h4 class="position-relative">dexter</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/p18769646_b_v7_aa.jpg" alt="" />
+                      <h4 class="position-relative">queen gambet</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/rezero.jpg" alt="" />
+                      <h4 class="position-relative">rezero</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img
+                        src="./assets/image/violet-evergarden-hoi-uc-khong-quen-poster-16073595429681840339141_11zon.jpg"
+                        alt=""
+                      />
+                      <h4 class="position-relative">violet evergardern</h4>
+                    </div>
+                  </section>
+                  <section
+                    class="wrapper-film-profile-artist col-6 col-sm-4 col-lg-3"
+                  >
+                    <div class="position-relative wrapper-header-slide">
+                      <div class="top-info d-flex justify-content-between">
+                        <div class="date">2024</div>
+                        <div class="rating d-flex">
+                          <img src="./assets/image/IMDB_Logo_2016.svg" alt="" />
+                          <p>7<span>/10</span></p>
+                        </div>
+                      </div>
+                      <img src="./assets/image/tokyo.jpg" alt="" />
+                      <h4 class="position-relative">tokyo ghoul</h4>
+                    </div>
+                  </section>
+                </div>
+              </div>
+            </div>
+            <div class="right-side">
+              <section
+                class="about-artist col-12 col-sm-6 col-md-4 mb-5 d-none d-md-block"
+              >
+                <article>
+                  <figure>
+                    <div class="profile">
+                      <img
+                        src="./assets/image/actors/30195091-l_30NAMA.webp"
+                        alt=""
+                      />
+                    </div>
+                  </figure>
+                  <figcaption>
+                    <div class="content">
+                      <div class="detail-artist">
+                        <p>نام : Alfred Hitchcock</p>
+                        <p>حرفه : کارگردان , نویسنده , بازیگر</p>
+                        <p>تعداد فیلم و سریال : 20</p>
+                      </div>
+                    </div>
+                  </figcaption>
+                </article>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============================ start footer ============================ -->
+    <footer class="container-fluid footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between mb-3">
+            <div class="d-md-block col-5 col-md-3 col-lg-2">
+              <div class="col-9 mt-2 d-flex justify-content-start">
+                <img class="w-100" src="./assets/image/reLogo.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="d-flex col-7 col-md-3 col-lg-3 align-items-center justify-content-end"
+            >
+              <a class="custom-btn1" href="#scroll-top">
+                بازگشت به بالا <i class="fa-solid fa-chevron-up"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>عناوین برتر</h5>
+            <ul>
+              <li><a href="">250 فیلم imdb</a></li>
+              <li><a href="">250 سریال imdb</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>دسته ها</h5>
+            <ul>
+              <li><a href="">فیلم ها</a></li>
+              <li><a href="">سریال ها</a></li>
+              <li><a href="">انیمه ها</a></li>
+              <li><a href="">اخبار ها</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>راه های ارتباط</h5>
+            <div class="social-icon">
+              <ul class="nav">
+                <li class="nav-item twitter">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item instagram">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item facebook">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="nav-item telegram">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+              </ul>
+              <p>طهران - خیابون به زودی پلاک 021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright-text d-flex justify-content-center">
+        <p>کلیه حقوق این سایت متعلق به سپهر قارئی میباشد .</p>
+        <p>Copyright © 2024 All rights reserved</p>
+      </div>
+    </footer>
+    <!-- ============================ end footer  ============================ -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

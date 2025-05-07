@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>moviere</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- Demo styles -->
+  </head>
+
+  <body dir="rtl">
+    <!-- ============================  header ============================ -->
+    <header id="scroll-top">
+      <!-- logo  -->
+      <div class="logo">
+        <img src="./assets/image/reLogo.png" alt="" />
+      </div>
+      <!-- nav -->
+      <ul class="menu">
+        <!-- home  -->
+        <li class="d-none d-lg-block"><a href="">خانه</a></li>
+
+        <!-- categories -->
+        <li class="d-none d-lg-block">
+          <div class="category-menu">
+            <button
+              class="btn btn-secondary category-menu-toggle"
+              type="button"
+              id="category-menuButton1"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              <i class="fas fa-layer-group"></i> فهرست ها
+            </button>
+            <ul class="dropdown-menu first-dropdown-menu">
+              <li class="dropdown-item">
+                <img src="./assets/image/doucument-icon.svg" alt="" />
+                <span class="px-2">دسته ها</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href=""> فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href=""> فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <img src="./assets/image/film-icon.svg" alt="" />
+                <span class="px-2">ژانر فیلم</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown-item">
+                <img src="./assets/image/serial-icon.svg" alt="" />
+
+                <span class="px-2">ژانر سریال</span>
+                <ul class="dropdown-menu submenu">
+                  <div class="width-400px">
+                    <div class="row">
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                      <div class="col-6 col-md-3 mx-3 my-2">
+                        <li><a class="dropdown-item" href="">فیلم</a></li>
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </li>
+        <!-- blog -->
+        <li class="d-none d-lg-block"><a href="">اخبار</a></li>
+        <!-- actors -->
+        <li class="d-none d-lg-block"><a href="">بازیگران</a></li>
+        <!-- nav in small responsive  -->
+        <div class="container-fluid nav-small-responsive d-lg-none">
+          <div class="row">
+            <div class="col-3 item">
+              <div>
+                <i class="fa fa-home"></i>
+              </div>
+              <div>
+                <p>خانه</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <!-- navbar -->
+              <button
+                class="navbar-toggler pt-1"
+                id="header-navbar-buttom"
+                type="button"
+                data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasdarkNavbar"
+                aria-controls="offcanvasdarkNavbar"
+                aria-label="Toggle navigation"
+              >
+                <div>
+                  <i class="fas fa-layer-group"></i>
+                </div>
+                <div class="pt-1">
+                  <p>فهرست ها</p>
+                </div>
+              </button>
+              <div
+                class="offcanvas offcanvas-end text-bg-dark"
+                tabindex="-1"
+                id="offcanvasdarkNavbar"
+                aria-labelledby="offcanvasdarkNavbarLabel"
+              >
+                <div class="offcanvas-header">
+                  <img src="./assets/image/reLogo.png" alt="" />
+                  <button
+                    type="button"
+                    class="btn-close btn-close-white"
+                    data-bs-dismiss="offcanvas"
+                    aria-label="Close"
+                    id="header-navbar-btn-close"
+                  ></button>
+                </div>
+                <div class="offcanvas-body">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        دسته ها
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ژانر فیلم
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a
+                        class="nav-link dropdown-toggle"
+                        href="#"
+                        role="button"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        ژانر سریال
+                      </a>
+                      <ul class="dropdown-menu dropdown-menu-dark">
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                        <li><a class="dropdown-item" href="#">فیلم</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div>
+                <i class="fa-regular fa-newspaper"></i>
+              </div>
+              <div>
+                <p>اخبار</p>
+              </div>
+            </div>
+            <div class="col-3 item">
+              <div>
+                <i class="fa-solid fa-person"></i>
+              </div>
+              <div>
+                <p>بازیگران</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </ul>
+
+      <!-- search and login -->
+      <div class="search-login d-flex justify-content-between">
+        <div>
+          <div id="myOverlay" class="overlay">
+            <span class="closebtn" onclick="closeSearch()" title="Close Overlay"
+              ><i class="fa-solid fa-circle-xmark"></i
+            ></span>
+            <div class="close-2-background" onclick="closeSearch()"></div>
+            <div class="overlay-content">
+              <form onsubmit="event.preventDefault();" role="search" dir="ltr">
+                <label for="search">Search for stuff</label>
+                <input
+                  id="search"
+                  type="search"
+                  placeholder="Search..."
+                  autofocus
+                  required
+                />
+                <button type="submit">Go</button>
+              </form>
+            </div>
+          </div>
+
+          <svg
+            class="svg-icon search-icon"
+            onclick="openSearch()"
+            aria-labelledby="title desc"
+            role="img"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 19.9 19.7"
+          >
+            <title id="title">Search Icon</title>
+            <desc id="desc">A magnifying glass icon.</desc>
+            <g class="search-path" fill="none">
+              <path stroke-linecap="square" d="M18.5 18.3l-5.4-5.4" />
+              <circle cx="8" cy="8" r="7" />
+            </g>
+          </svg>
+        </div>
+        <a href=""> ورود | ثبت نام </a>
+      </div>
+    </header>
+
+    <!-- ============================ start header body ============================ -->
+    <div class="container">
+      <div class="row">
+        <div class="archive-title d-flex justify-content-between mb-2 mt-5">
+          <div class="right-side d-flex align-items-center">
+            <div class="film-logo-svg">
+              <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M15.8 21C15.8 21.3866 16.1134 21.7 16.5 21.7C16.8866 21.7 17.2 21.3866 17.2 21H15.8ZM4.8 21C4.8 21.3866 5.1134 21.7 5.5 21.7C5.8866 21.7 6.2 21.3866 6.2 21H4.8ZM6.2 18C6.2 17.6134 5.8866 17.3 5.5 17.3C5.1134 17.3 4.8 17.6134 4.8 18H6.2ZM12.3 21C12.3 21.3866 12.6134 21.7 13 21.7C13.3866 21.7 13.7 21.3866 13.7 21H12.3ZM13.7 18C13.7 17.6134 13.3866 17.3 13 17.3C12.6134 17.3 12.3 17.6134 12.3 18H13.7ZM11.7429 11.3125L11.3499 10.7333L11.3499 10.7333L11.7429 11.3125ZM16.2429 11.3125L15.8499 10.7333L15.8499 10.7333L16.2429 11.3125ZM3.2 21V19.5H1.8V21H3.2ZM8 14.7H11V13.3H8V14.7ZM15.8 19.5V21H17.2V19.5H15.8ZM11 14.7C13.651 14.7 15.8 16.849 15.8 19.5H17.2C17.2 16.0758 14.4242 13.3 11 13.3V14.7ZM3.2 19.5C3.2 16.849 5.34903 14.7 8 14.7V13.3C4.57583 13.3 1.8 16.0758 1.8 19.5H3.2ZM11 14.7H15.5V13.3H11V14.7ZM20.3 19.5V21H21.7V19.5H20.3ZM15.5 14.7C18.151 14.7 20.3 16.849 20.3 19.5H21.7C21.7 16.0758 18.9242 13.3 15.5 13.3V14.7ZM6.2 21V18H4.8V21H6.2ZM13.7 21V18H12.3V21H13.7ZM9.5 11.3C7.67746 11.3 6.2 9.82255 6.2 8.00001H4.8C4.8 10.5958 6.90426 12.7 9.5 12.7V11.3ZM6.2 8.00001C6.2 6.17746 7.67746 4.7 9.5 4.7V3.3C6.90426 3.3 4.8 5.40427 4.8 8.00001H6.2ZM9.5 4.7C11.3225 4.7 12.8 6.17746 12.8 8.00001H14.2C14.2 5.40427 12.0957 3.3 9.5 3.3V4.7ZM12.8 8.00001C12.8 9.13616 12.2264 10.1386 11.3499 10.7333L12.1358 11.8918C13.3801 11.0477 14.2 9.61973 14.2 8.00001H12.8ZM11.3499 10.7333C10.8225 11.091 10.1867 11.3 9.5 11.3V12.7C10.4757 12.7 11.3839 12.4019 12.1358 11.8918L11.3499 10.7333ZM14 4.7C15.8225 4.7 17.3 6.17746 17.3 8.00001H18.7C18.7 5.40427 16.5957 3.3 14 3.3V4.7ZM17.3 8.00001C17.3 9.13616 16.7264 10.1386 15.8499 10.7333L16.6358 11.8918C17.8801 11.0477 18.7 9.61973 18.7 8.00001H17.3ZM15.8499 10.7333C15.3225 11.091 14.6867 11.3 14 11.3V12.7C14.9757 12.7 15.8839 12.4019 16.6358 11.8918L15.8499 10.7333ZM11.9378 5.42349C12.5029 4.97049 13.2189 4.7 14 4.7V3.3C12.8892 3.3 11.8667 3.68622 11.0622 4.33114L11.9378 5.42349ZM14 11.3C13.3133 11.3 12.6775 11.091 12.1501 10.7333L11.3642 11.8918C12.1161 12.4019 13.0243 12.7 14 12.7V11.3Z"
+                  fill="#000000"
+                />
+              </svg>
+            </div>
+            <h2>هنرمندان</h2>
+          </div>
+          <div class="left-side d-flex align-items-center">
+            <div class="genre">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  حرفه
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">همه</a></li>
+                  <li><a class="dropdown-item" href="#">بازیگر</a></li>
+                  <li><a class="dropdown-item" href="#">کارگردان</a></li>
+                  <li><a class="dropdown-item" href="#">نویسنده</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="order-by">
+              <div class="dropdown">
+                <button
+                  class="btn btn-secondary dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  جنسیت
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">همه</a></li>
+                  <li><a class="dropdown-item" href="#">مرد</a></li>
+                  <li><a class="dropdown-item" href="#">زن</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ============================ end header body ============================ -->
+
+    <!-- ============================ start body ============================ -->
+    <div class="container">
+      <div class="row">
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/30195091-l_30NAMA.webp"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : Alfred Hitchcock</p></div>
+                  <div class="profession">
+                    <p>حرفه : کارگردان , نویسنده , بازیگر</p>
+                  </div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/img-david-lynch-01-184117216071-750x1000.jpg!Portrait.jpg"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : david lynch</p></div>
+                  <div class="profession"><p>حرفه : کارگردان , نویسنده</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img src="./assets/image/actors/174717_v9_bb.jpg" alt="" />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : aaron paul</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/30195091-l_30NAMA.webp"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : Alfred Hitchcock</p></div>
+                  <div class="profession">
+                    <p>حرفه : کارگردان , نویسنده , بازیگر</p>
+                  </div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/al-pacino-042423-2000-d6fdcc99931f4a32aec8aca88b80cd40.jpg"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : al pacino</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img src="./assets/image/actors/images.jpg" alt="" />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : jack nickolson</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/GettyImages-106952008.webp"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : standly kubrick</p></div>
+                  <div class="profession"><p>حرفه : کارگردان , نویسنده</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/eKF1sGJRrZJbfBG1KirPt1cfNd3.jpg"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : tom hanks</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img src="./assets/image/actors/h911uvnf2wq91.jpg" alt="" />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : christian bale</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img src="./assets/image/actors/fer4z6f9tf181.webp" alt="" />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : jennifer connely</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/australian-actress-nicole-kidman-attends-the-photocall-for-news-photo-1685726186.jpg"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام : nicole kidman</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+        <section class="wrapper-artist col-12 col-sm-6 col-md-4 mb-5">
+          <article>
+            <figure>
+              <div class="profile">
+                <img
+                  src="./assets/image/actors/30147690-l_30NAMA.webp"
+                  alt=""
+                />
+              </div>
+            </figure>
+            <figcaption>
+              <div class="content">
+                <div class="detail-artist">
+                  <div class="name"><p>نام :Keira Knightley</p></div>
+                  <div class="profession"><p>حرفه : بازیگر</p></div>
+                </div>
+                <div class="bio-artist">
+                  <a href="">بیوگرافی</a>
+                </div>
+              </div>
+            </figcaption>
+          </article>
+        </section>
+      </div>
+    </div>
+    <!-- ============================ end body ============================ -->
+
+    <footer class="container-fluid footer mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex justify-content-between mb-3">
+            <div class="d-md-block col-5 col-md-3 col-lg-2">
+              <div class="col-9 mt-2 d-flex justify-content-start">
+                <img class="w-100" src="./assets/image/reLogo.png" alt="" />
+              </div>
+            </div>
+            <div
+              class="d-flex col-7 col-md-3 col-lg-3 align-items-center justify-content-end"
+            >
+              <a class="custom-btn1" href="#scroll-top">
+                بازگشت به بالا <i class="fa-solid fa-chevron-up"></i
+              ></a>
+            </div>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>عناوین برتر</h5>
+            <ul>
+              <li><a href="">250 فیلم imdb</a></li>
+              <li><a href="">250 سریال imdb</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>دسته ها</h5>
+            <ul>
+              <li><a href="">فیلم ها</a></li>
+              <li><a href="">سریال ها</a></li>
+              <li><a href="">انیمه ها</a></li>
+              <li><a href="">اخبار ها</a></li>
+            </ul>
+          </div>
+          <div class="col-6 col-md-4">
+            <h5>راه های ارتباط</h5>
+            <div class="social-icon">
+              <ul class="nav">
+                <li class="nav-item twitter">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-x-twitter"></i>
+                  </a>
+                </li>
+                <li class="nav-item instagram">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </li>
+                <li class="nav-item facebook">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-facebook-f"></i>
+                  </a>
+                </li>
+                <li class="nav-item telegram">
+                  <a class="nav-link" href="#">
+                    <i class="fab fa-telegram-plane"></i>
+                  </a>
+                </li>
+              </ul>
+              <p>طهران - خیابون به زودی پلاک 021</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container copyright-text d-flex justify-content-center">
+        <p>کلیه حقوق این سایت متعلق به سپهر قارئی میباشد .</p>
+        <p>Copyright © 2024 All rights reserved</p>
+      </div>
+    </footer>
+    <script src="./assets/js/delete-and-add-class.js"></script>
+    <!-- ============================ end footer  ============================ -->
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./assets/js/swiper.js"></script>
+    <script src="assets/js/app.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
